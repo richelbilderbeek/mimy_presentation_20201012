@@ -201,12 +201,12 @@ Conclusions
 Future
 ========================================================
 
- * ✓ Use BLOSUM80 instead of BLOSUM62
- * ✓ Use ClustalOmega instead of ClustalW
- * □ Use Kolmogorov-Smirnov test instead of magic
- * □ Use all SARS-CoV-2 sequences
- * □ Split topology in inside, membrane, outside
- * □ ?determine the evolutionary conservation from
+ * ☑ Use BLOSUM80 instead of BLOSUM62
+ * ☑ Use ClustalOmega instead of ClustalW
+ * ☐ Use Kolmogorov-Smirnov test instead of magic
+ * ☐ Use all SARS-CoV-2 sequences
+ * ☐ Split topology in inside, membrane, outside
+ * ♫ Determine the evolutionary conservation from
    the post-translational proteins.
 
 
