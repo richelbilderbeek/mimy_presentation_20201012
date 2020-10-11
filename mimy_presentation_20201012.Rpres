@@ -18,8 +18,8 @@ Predicted topology of SARS-CoV-2
 
 *Predicted topology of SARS-CoV-2,
 for different relative amino acid positions (x-axis),
-for 6 random proteins (y-axis),
-colored by TMH (no = red, yes = blue).*
+for 4 random proteins (y-axis),
+colored by topology (non-TMH = red, TMH = blue).*
 
 Question
 ========================================================
@@ -198,19 +198,17 @@ Conclusions
    an incorrect conclusion!
  * TMHs are slightly less conserved than non-TMHs
 
-Already done
+Future
 ========================================================
 
- * Use BLOSUM80 instead of BLOSUM62
- * Use ClustalOmega instead of ClustalW
- * Use Kolmogorov-Smirnov test instead of magic
-
-To do
-========================================================
-
- * Split topology in inside, membrane, outside
- * (Dream)determine the evolutionary conservation from
+ * ✓ Use BLOSUM80 instead of BLOSUM62
+ * ✓ Use ClustalOmega instead of ClustalW
+ * □ Use Kolmogorov-Smirnov test instead of magic
+ * □ Use all SARS-CoV-2 sequences
+ * □ Split topology in inside, membrane, outside
+ * □ ?determine the evolutionary conservation from
    the post-translational proteins.
+
 
 Questions
 ========================================================
@@ -228,19 +226,3 @@ mimy_presentation_20201012
 ```
 
 ![](CC-BY-NC-SA.png)
-
-What is known
-========================================================
-
-![](naqvi_et_al_pre.png)
-
-*Naqvi, Ahmad Abu Turab, et al., 2020, Biochimica et Biophysica Acta (BBA)-Molecular Basis of Disease*
-
-```{r echo=FALSE}
-# Naqvi, Ahmad Abu Turab, et al. "Insights into SARS-CoV-2 genome, structure, evolution, pathogenesis and therapies: Structural genomics approach." Biochimica et Biophysica Acta (BBA)-Molecular Basis of Disease (2020): 165878.
-```
-
-***
-> "Despite high conservation among target proteins,
-> structural differences make available drugs
-> ineffective against SARS-CoV-2."
