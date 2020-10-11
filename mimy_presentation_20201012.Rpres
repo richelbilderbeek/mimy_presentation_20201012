@@ -11,7 +11,41 @@ mimy_presentation_20201012
 
 ![](CC-BY-NC-SA.png)
 
-Epitope presentation
+Predicted topology of SARS-CoV-2
+========================================================
+
+![](covid_19_topology_50.png)
+
+Given
+========================================================
+
+ * MHC-I presents mostly 9-mers
+ * From a SARS-CoV-2 reference proteome:
+   * 14207 9-mers in total
+   * 1271 9-mers overlap with a TMH
+ * Immunoproteasome is a cytosolic protein
+
+***
+
+![](ip.png)
+
+```{r}
+# Angeles, Arkhjamil, Gabriel Fung, and Honglin Luo. "Immune and non-immune functions of the immunoproteasome." Front Biosci 17.1 (2012): 1904.
+```
+
+Question
+========================================================
+
+Which percentage of 9-mers that overlap with a TMH are presented by MHC-I?
+
+ * A. 0 percent
+ * B. Between 0 and 9 percent
+ * C. $\approx$ 9 percent [*]
+ * D. More than 9 percent
+
+[*] 1271 / 14207 $\approx$ 9 percent
+
+TMH-derived peptide presentation
 ========================================================
 
 ![](fimmu-08-01118-g005_smaller.jpg)
@@ -20,7 +54,7 @@ Epitope presentation
 
 Bianchi, Textor, van den Bogaart. 2017. "Transmembrane Helices are an overlooked source of Major Histocompatibility Complex Class I epitopes." Frontiers in Immunology
 
-TMHs are presentated more often
+TMH-derived peptides are over-presented
 ========================================================
 
 ![](fimmu-08-01118-g001a.png)
@@ -29,15 +63,183 @@ TMHs are presentated more often
 
 ![](frans_and_geert_and_johannes.jpg)
 
+Why
+========================================================
+
+> "The presentation of epitopes derived from TMHs could offer
+> a clear evolutionary advantage."
+
+***
+
+![](frans.jpg)
+
+Why
+========================================================
+
+> "TMHs are well-conserved as
+> there are strict compositional requirements for spanning lipid
+> membranes."
+
+***
+
+![](geert.jpg)
+
+Why
+========================================================
+
+> "Because the
+> precise composition of TMHs is essential for protein
+> conformation and localization, pathogens might be unable to evade
+> antigen presentation by mutating these regions."
+
+***
+
+![](johannes.jpg)
+
+Research question
+========================================================
+
+Are TMHs evolutionarily conserved? That is, compared to non-TMH parts?
+
+ * $\mathcal{H_0}$: no
+ * $\mathcal{H_1}$: yes
+
+***
+
+![](professor_oak.png)
+
+Methods
+========================================================
+
+ * Obtain $\approx$ 45k SARS-CoV-2 proteomes
+ * Do a multiple sequence alignment
+ * Determine evolutionary conservation
+
+⚠ Preliminary results ⚠
+
+Conservation scores of SARS-CoV-2
+========================================================
+
+![](scores_slide.png)
+
+*SARS-CoV-2 conservation scores (y-axis),
+through the residues (x-axis) of all 6 membrane proteins,
+colored by TMH (no = red, yes = blue).
+Proteins are NSP3, NSP4 and NSP6 (left columns) and E, M, NS3 (right column).
+n $\approx$ 45k*
+
+Conservation scores of SARS-CoV-2
+========================================================
+
+![](scores_boxplot.png)
+
+***
+
+*SARS-CoV-2 conservation scores of all residues combined (y-axis),
+for all 6 membrane proteins (x-axis),
+colored by TMH (no = red, yes = blue).
+Proteins are E, M, NS3, NSP3, NSP4 and NSP6.
+n $\approx$ 45k*
+
+NS3 differs significantly
+
+**Median conservation score of TMHs is less in 3 out of 5 cases**
+
+Conservation scores of SARS-CoV-2
+========================================================
+
+![](scores_violin.png)
+
+***
+
+*SARS-CoV-2 conservation scores of all residues combined (y-axis),
+for all 6 membrane proteins (x-axis),
+colored by TMH (no = red, yes = blue).
+Proteins are E, M, NS3, NSP3, NSP4 and NSP6.
+n $\approx$ 45k*
+
+NS3 differs significantly
+
+**Conservation scores of TMHs are less in 3 out of 5 cases**
+
+Results
+========================================================
+
+![](scores_merged_boxplot.png)
+
+***
+
+*SARS-CoV-2 conservation scores of all residues of all 6 membrane
+proteins combined (y-axis),
+colored by TMH (no = red, yes = blue).
+n $\approx$ 45k*
+
+TMHs are significantly conserved
+
+Results
+========================================================
+
+![](scores_merged_violin.png)
+
+***
+
+*SARS-CoV-2 conservation scores of all residues of all 6 membrane
+proteins combined (y-axis),
+colored by TMH (no = red, yes = blue).
+n $\approx$ 45k*
+
+TMHs are significantly conserved
+
+Conclusions
+========================================================
+
+ * Naively comparing all conservation scores results in
+   an incorrect conclusion!
+ * TMHs are slightly less conserved than non-TMHs
+
+Already done
+========================================================
+
+ * Use BLOSUM80 instead of BLOSUM62
+ * Use ClustalOmega instead of ClustalW
+ * Use Kolmogorov-Smirnov test instead of magic
+
+To do
+========================================================
+
+ * Split topology in inside, membrane, outside
+ * (Dream)determine the evolutionary conservation from
+   the post-translational proteins.
 
 Questions
 ========================================================
 
+Contact me:
+```
+richel@richelbilderbeek.nl
+```
+
+Check me:
+
 ```
 https://github.com/richelbilderbeek/
-mimy_presentation_20200818
+mimy_presentation_20201012
 ```
 
- * YouTube: [https://youtu.be/4gViseu7isc](https://youtu.be/4gViseu7isc)
-
 ![](CC-BY-NC-SA.png)
+
+What is known
+========================================================
+
+![](naqvi_et_al_pre.png)
+
+*Naqvi, Ahmad Abu Turab, et al., 2020, Biochimica et Biophysica Acta (BBA)-Molecular Basis of Disease*
+
+```{r echo=FALSE}
+# Naqvi, Ahmad Abu Turab, et al. "Insights into SARS-CoV-2 genome, structure, evolution, pathogenesis and therapies: Structural genomics approach." Biochimica et Biophysica Acta (BBA)-Molecular Basis of Disease (2020): 165878.
+```
+
+***
+> "Despite high conservation among target proteins,
+> structural differences make available drugs
+> ineffective against SARS-CoV-2."
