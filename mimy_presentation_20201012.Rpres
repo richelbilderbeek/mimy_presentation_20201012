@@ -16,34 +16,35 @@ Predicted topology of SARS-CoV-2
 
 ![](covid_19_topology_50.png)
 
-Given
-========================================================
-
- * MHC-I presents mostly 9-mers
- * From a SARS-CoV-2 reference proteome:
-   * 14207 9-mers in total
-   * 1271 9-mers overlap with a TMH
- * Immunoproteasome is a cytosolic protein
-
-***
-
-![](ip.png)
-
-```{r}
-# Angeles, Arkhjamil, Gabriel Fung, and Honglin Luo. "Immune and non-immune functions of the immunoproteasome." Front Biosci 17.1 (2012): 1904.
-```
+*Predicted topology of SARS-CoV-2,
+for different relative amino acid positions (x-axis),
+for 6 random proteins (y-axis),
+colored by TMH (no = red, yes = blue).*
 
 Question
 ========================================================
 
-Which percentage of 9-mers that overlap with a TMH are presented by MHC-I?
+Given that ...
+
+ * $\approx$ 9% of 9-mers overlap with a TMH
+ * MHC-I presents mostly 9-mers
+ * Immunoproteasome is a cytosolic protein
+
+```{r echo=FALSE}
+# From a SARS-CoV-2 reference proteome, 14207 9-mers in total,
+# 1271 9-mers overlap with a TMH (1271 / 14207 $\approx$ 9%)
+```
+
+***
+
+... which percentage of 9-mers that overlap with a TMH are presented by MHC-I?
 
  * A. 0 percent
  * B. Between 0 and 9 percent
- * C. $\approx$ 9 percent [*]
+ * C. $\approx$ 9 percent
  * D. More than 9 percent
 
-[*] 1271 / 14207 $\approx$ 9 percent
+
 
 TMH-derived peptide presentation
 ========================================================
