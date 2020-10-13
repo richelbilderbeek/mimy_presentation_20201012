@@ -1,4 +1,4 @@
-Conservation of TMH helices
+Conservation of TMHs
 ========================================================
 author: Richèl J.C. Bilderbeek
 date:
@@ -127,7 +127,7 @@ Conservation scores of SARS-CoV-2
 through the residues (x-axis) of all 6 membrane proteins,
 colored by TMH (no = red, yes = blue).
 Proteins are NSP3, NSP4 and NSP6 (left columns) and E, M, NS3 (right column).
-n $\approx$ 45k*
+n < 45k*
 
 Conservation scores of SARS-CoV-2
 ========================================================
@@ -140,7 +140,7 @@ Conservation scores of SARS-CoV-2
 for all 6 membrane proteins (x-axis),
 colored by TMH (no = red, yes = blue).
 Proteins are E, M, NS3, NSP3, NSP4 and NSP6.
-n $\approx$ 45k*
+n < 45k*
 
 NS3 differs significantly
 
@@ -157,7 +157,7 @@ Conservation scores of SARS-CoV-2
 for all 6 membrane proteins (x-axis),
 colored by TMH (no = red, yes = blue).
 Proteins are E, M, NS3, NSP3, NSP4 and NSP6.
-n $\approx$ 45k*
+n < 45k*
 
 NS3 differs significantly
 
@@ -173,7 +173,7 @@ Results
 *SARS-CoV-2 conservation scores of all residues of all 6 membrane
 proteins combined (y-axis),
 colored by TMH (no = red, yes = blue).
-n $\approx$ 45k*
+n < 45k*
 
 TMHs are significantly conserved
 
@@ -187,7 +187,7 @@ Results
 *SARS-CoV-2 conservation scores of all residues of all 6 membrane
 proteins combined (y-axis),
 colored by TMH (no = red, yes = blue).
-n $\approx$ 45k*
+n < 45k*
 
 TMHs are significantly conserved
 
